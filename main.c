@@ -13,7 +13,6 @@ int main (){
     LoadFile("files/address.txt",bufferAddress);
 
     for (int i = 0; i < bufferAddressSize; ++i) {
-        printf("0x%X \n",bufferAddress[i]);
         realAddress[i] = handlerMMU(bufferAddress[i]);
     }
 
